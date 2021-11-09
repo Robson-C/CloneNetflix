@@ -2,24 +2,83 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>NETFLIX CLONE</title>
 </head>
 <body>
     <header>
-        <div class="conteiner">
-            <h2>NETFLIX</h2>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="#">Iniciar</a>
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Documentários</a>
-                
             </nav>
         </div>
-        
     </header>
-    
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">ARCANE</h3>
+                <p class="descricao">Dos mesmos criadores de League of Legends, chega uma nova série de animação: Arcane. Ambientada na próspera região de Piltover e na oprimida cidade subterrânea de Zaun, a história explora as origens de duas campeãs icônicas e do poder que irá separá-las.</p>
+                <div class="botoes">
+                    <button role="button" class="botao"><!--role diz que vai fazer a função de botao independente do disposivito-->
+                        <i class="fas fa-play"></i>
+                        Assistir Agora
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        Mais Informações
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="https://twitter.com/i/status/1457191446067376129" target="_blank"><img src="img/vi.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://twitter.com/i/status/1452651169361416194"><img src="img/jinx.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="img/ekko.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://twitter.com/i/status/1457422606106128390"><img src="img/jayce.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="img/caitlyn.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://twitter.com/i/status/1457178352184291330"><img src="img/heimerdinger.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://twitter.com/i/status/1457184618130542592"><img src="img/viktor.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="img/ryze.jpg" alt="" srcset=""></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/b7777c6696.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
 </html>
